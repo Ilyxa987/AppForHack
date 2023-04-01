@@ -28,4 +28,10 @@
         android:name="com.example.appforhack.ui.tourTable.TourTable"
         android:label="Table"
         tools:layout="@layout/fragment_table"/>
+
+    <fragment
+        android:id="@+id/navigation_learn"
+        android:name="com.example.appforhack.ui.learningBase.LearningBase"
+        android:label="Base"
+        tools:layout="@layout/fragment_learningbase"/>
 </navigation>
