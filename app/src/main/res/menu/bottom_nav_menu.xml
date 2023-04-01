@@ -22,4 +22,9 @@
         android:icon="@drawable/icon_menu"
         android:title="Table"/>
 
+    <item
+        android:id="@+id/navigation_learn"
+        android:icon="@drawable/book"
+        android:title="Base"/>
+
 </menu>

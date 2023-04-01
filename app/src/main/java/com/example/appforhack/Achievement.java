@@ -1,14 +1,20 @@
 package com.example.appforhack;
 
+import android.widget.ProgressBar;
+
 public class Achievement {
     String title;
     String description;
     int coverId;
+    int percent;
+    int progressBarId;
 
-    public Achievement(String title, String description, int coverId) {
+    public Achievement(String title, String description, int coverId, int percent) {
         this.title = title;
         this.description = description;
         this.coverId = coverId;
+        this.percent = percent;
+        //this.progressBarId = progressBarId;
     }
 
     public String getTitle() {
@@ -33,5 +39,9 @@ public class Achievement {
 
     public void setCoverId(int coverId) {
         this.coverId = coverId;
+    }
+
+    public int getPercent() {
+        return percent;
     }
 }
