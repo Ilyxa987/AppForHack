@@ -7,6 +7,8 @@
     android:layout_height="match_parent"
     tools:context=".ui.home.HomeFragment">
 
+
+
         <RelativeLayout
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -30,7 +32,6 @@
                 style="@style/UserIconTextStyle" />
 
         </RelativeLayout>
-
         <TextView
             android:id="@+id/text_home"
             android:layout_width="wrap_content"
@@ -39,19 +40,23 @@
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:textAlignment="center"
-            android:textSize="20sp"
-            style="@style/UserIconTextStyle"
+            style="@style/TitleTextStyle"
             app:layout_constraintLeft_toRightOf="@+id/ava_image"
             app:layout_constraintTop_toTopOf="parent"/>
 
         <TextView
             android:layout_width="wrap_content"
+            style="@style/DescriptionTextStyle"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/text_home"
             app:layout_constraintLeft_toRightOf="@id/ava_image"
             android:layout_marginLeft="8dp"
             android:text="Level 1"
-            style="@style/UserIconTextStyle"/>
+            android:fontFamily="montserrat"
+            android:textAlignment="center"
+            />
+
+
 
         <ImageView
             android:id="@+id/score"
