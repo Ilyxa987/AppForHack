@@ -1,326 +1,354 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent" android:layout_width="match_parent">
+
+<androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#D6D7D7"
-    tools:context=".ui.dashboard.DashboardFragment"
-    >
+    tools:context=".ui.dashboard.DashboardFragment">
 
     <TextView
         android:id="@+id/text_dashboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
         android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        android:textSize="25sp"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="24dp" />
+
+
+
 
     <ImageButton
         android:id="@+id/level1"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="227dp"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="200dp"
         android:src="@drawable/nav_icon_ch"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_dashboard" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/level2"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="228dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="464dp"
         android:src="@drawable/nav_icon_ch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/level1" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/level3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="272dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="332dp"
         android:src="@drawable/nav_icon_ch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/level2" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/level41"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="136dp"
-        android:layout_marginTop="308dp"
+        android:layout_marginLeft="104dp"
+        android:layout_marginTop="512dp"
         android:src="@drawable/img_1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/level2" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
-        android:id="@+id/level4"
+        android:id="@+id/level42"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="36dp"
         android:src="@drawable/nav_icon_ch"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/level2" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="472dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="248dp"
+        android:layout_marginTop="252dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="210dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="372dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="212dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="120dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="240dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="448dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="214dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="392dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="480dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="138dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="412dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="536dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="156dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="452dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="216dp"
+        android:layout_marginTop="284dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="192dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="432dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="192dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="174dp" />
-    <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="432dp"
-        android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="174dp" />
-    <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="432dp"
-        android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="174dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="224dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="152dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="232dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="208dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="116dp"
+        android:layout_marginTop="408dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="250dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="524dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="172dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="256dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="564dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="320dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="220dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="584dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="356dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="202dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="604dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="464dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="184dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="544dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="204dp"
+        android:layout_marginTop="564dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="238dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="564dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="224dp"
+        android:layout_marginTop="496dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="220dp" />
-    <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="564dp"
-        android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="220dp" />
-    <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="564dp"
-        android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="220dp" />
-    <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="564dp"
-        android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="220dp" />
-    <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="564dp"
-        android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="220dp" />
-    <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="564dp"
-        android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="220dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="304dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="552dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="146dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="288dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="420dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="164dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="272dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="340dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="178dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="256dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="304dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="196dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    v
 
     <ImageView
-        android:layout_width="26dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="83dp"
-        android:layout_marginBottom="184dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="232dp"
+        android:layout_marginTop="272dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/level3"
-        app:layout_constraintVertical_bias="0.0"
-        tools:layout_editor_absoluteX="302dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="88dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="372dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="228dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="108dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="168dp"
+        android:layout_marginTop="116dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="250dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="128dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginTop="432dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="266dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="164dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="184dp"
+        android:layout_marginTop="136dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="302dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:layout_width="18dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="148dp"
+        android:layout_width="17dp"
+        android:layout_height="17dp"
+        android:layout_marginLeft="148dp"
+        android:layout_marginTop="96dp"
         android:src="@drawable/carta"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="284dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="24dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="264dp"
+        android:layout_marginTop="188dp"
+        android:text="2"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginTop="320dp"
+        android:text="3"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="244dp"
+        android:layout_marginTop="452dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

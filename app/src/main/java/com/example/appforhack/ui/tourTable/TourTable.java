@@ -33,9 +33,9 @@ public class TourTable extends Fragment {
 
         LinkedList<Intern> internList = new LinkedList<>();
 
-        internList.add(new Intern("Софья", "67", R.drawable.ava_sofia));
-        internList.add(new Intern("Платон", "67", R.drawable.ava_platon));
-        internList.add(new Intern("Илья", "67", R.drawable.ava_ilya));
+        internList.add(new Intern("Аргандейкина Софья", "67", R.drawable.ava_sofia));
+        internList.add(new Intern("Волгарев Платон", "67", R.drawable.ava_platon));
+        internList.add(new Intern("Павлов Илья", "67", R.drawable.ava_ilya));
 
         String[] keyArray = {"name", "scores", "ava"};
         int [] idArray = {R.id.tour_name, R.id.tour_scores, R.id.ava};
