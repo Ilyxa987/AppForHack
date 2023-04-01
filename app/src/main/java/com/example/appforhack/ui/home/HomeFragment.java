@@ -29,7 +29,7 @@ public class HomeFragment extends Fragment  {
     Button clicker;
     TextView scores;
     ListView achList;
-    ProgressBar progress;
+    private ProgressBar progress;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -46,7 +46,7 @@ public class HomeFragment extends Fragment  {
         achList = (ListView) root.findViewById(R.id.list);
 
         scores = (TextView) root.findViewById(R.id.col_scores);
-        progress = (ProgressBar) root.findViewById(R.id.progress);
+        //progress = (ProgressBar) root.findViewById(R.id.progress);
 
         LinkedList<Achievement> achLinkedList = new LinkedList<>();
 
@@ -58,7 +58,7 @@ public class HomeFragment extends Fragment  {
         achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
         achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
         achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
-        //ProgressBar bebra = root.findViewById(R.id.progress);
+       // ProgressBar bebra = (ProgressBar) root.findViewById(R.id.progress);
         String[] keyArray = {"title", "description", "cover", "percent", "progress"};
         int [] idArray = {R.id.title, R.id.desk, R.id.cover, R.id.percent};
 
@@ -70,9 +70,9 @@ public class HomeFragment extends Fragment  {
             bookMap.put(keyArray[1], achLinkedList.get(i).getDescription());
             bookMap.put(keyArray[2], achLinkedList.get(i).getCoverId());
             bookMap.put(keyArray[3], achLinkedList.get(i).getPercent());
-            //bookMap.put(keyArray[4], achLinkedList.get(i).getProgressBarId());
-            //ProgressBar bebra = (ProgressBar) root.findViewById(Integer.parseInt(keyArray[4]));
-            int pr = achLinkedList.get(i).getPercent();
+            //bookMap.put(keyArray[4], achLinkedList.get(i).getPercent());
+            //ProgressBar bebra = (ProgressBar) root.findViewById(R.layout.list_item.progress);
+            //int pr = achLinkedList.get(i).getPercent();
             //bebra.setProgress(pr);
             listForAdapter.add(bookMap);
         }
