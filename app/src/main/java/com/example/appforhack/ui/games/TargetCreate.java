@@ -7,6 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.appforhack.Constants;
 import com.example.appforhack.MainActivity;
 import com.example.appforhack.R;
 import com.example.appforhack.ui.dashboard.DashboardFragment;
@@ -33,7 +34,7 @@ public class TargetCreate extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 scores+=2;
-                intent.putExtra("Scores", scores);
+                Constants.scores=scores;
                 startActivity(intent);
             }
         });
@@ -42,7 +43,7 @@ public class TargetCreate extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("Scores", scores);
+                Constants.scores=scores;
                 startActivity(intent);
             }
         });
@@ -51,7 +52,7 @@ public class TargetCreate extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                intent.putExtra("Scores", scores);
+                Constants.scores = scores;
                 startActivity(intent);
             }
         });
