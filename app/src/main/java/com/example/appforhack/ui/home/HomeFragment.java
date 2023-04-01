@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ListView;
+import android.widget.ProgressBar;
 import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
@@ -28,6 +29,7 @@ public class HomeFragment extends Fragment  {
     Button clicker;
     TextView scores;
     ListView achList;
+    ProgressBar progress;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -44,20 +46,22 @@ public class HomeFragment extends Fragment  {
         achList = (ListView) root.findViewById(R.id.list);
 
         scores = (TextView) root.findViewById(R.id.col_scores);
+        progress = (ProgressBar) root.findViewById(R.id.progress);
 
         LinkedList<Achievement> achLinkedList = new LinkedList<>();
 
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1));
-        achLinkedList.add(new Achievement("Ach 2", "Ghf", R.drawable.a2));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        achLinkedList.add(new Achievement("Ach 2", "Ghf", R.drawable.a2, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        //ProgressBar bebra = root.findViewById(R.id.progress);
+        String[] keyArray = {"title", "description", "cover", "percent", "progress"};
+        int [] idArray = {R.id.title, R.id.desk, R.id.cover, R.id.percent};
 
-        String[] keyArray = {"title", "description", "cover"};
-        int [] idArray = {R.id.title, R.id.desk, R.id.cover};
 
         LinkedList<HashMap<String, Object>> listForAdapter = new LinkedList<>();
         for (int i = 0; i < achLinkedList.size(); i++) {
@@ -65,6 +69,11 @@ public class HomeFragment extends Fragment  {
             bookMap.put(keyArray[0], achLinkedList.get(i).getTitle());
             bookMap.put(keyArray[1], achLinkedList.get(i).getDescription());
             bookMap.put(keyArray[2], achLinkedList.get(i).getCoverId());
+            bookMap.put(keyArray[3], achLinkedList.get(i).getPercent());
+            //bookMap.put(keyArray[4], achLinkedList.get(i).getProgressBarId());
+            //ProgressBar bebra = (ProgressBar) root.findViewById(Integer.parseInt(keyArray[4]));
+            int pr = achLinkedList.get(i).getPercent();
+            //bebra.setProgress(pr);
             listForAdapter.add(bookMap);
         }
 
