@@ -1,44 +1,326 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.dashboard.DashboardFragment">
+    android:background="#D6D7D7"
+    tools:context=".ui.dashboard.DashboardFragment"
+    >
 
     <TextView
         android:id="@+id/text_dashboard"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
     <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        app:layout_constraintTop_toBottomOf="@id/text_dashboard"
-        app:layout_constraintStart_toStartOf="parent"
-        android:src="@drawable/nav_icon_ch"
         android:id="@+id/level1"
-        />
-
-    <ImageButton
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintTop_toBottomOf="@id/level1"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="227dp"
         android:src="@drawable/nav_icon_ch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_dashboard" />
+
+    <ImageButton
         android:id="@+id/level2"
-        />
-
-    <ImageButton
         android:layout_width="100dp"
         android:layout_height="100dp"
-        app:layout_constraintTop_toBottomOf="@id/level2"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="228dp"
+        android:layout_marginTop="20dp"
         android:src="@drawable/nav_icon_ch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level1" />
+
+    <ImageButton
         android:id="@+id/level3"
-        />
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="272dp"
+        android:layout_marginTop="176dp"
+        android:src="@drawable/nav_icon_ch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level2" />
+
+    <ImageButton
+        android:id="@+id/level41"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="308dp"
+        android:src="@drawable/img_1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level2" />
+
+    <ImageButton
+        android:id="@+id/level4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="52dp"
+        android:src="@drawable/nav_icon_ch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/level2" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="472dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="210dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="372dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="120dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="240dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="214dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="392dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="138dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="412dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="156dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="452dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="192dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="432dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="174dp" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="432dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="174dp" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="432dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="174dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="224dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="232dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="208dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="250dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="524dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="256dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="220dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="584dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="202dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="604dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="184dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="544dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="238dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="220dp" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="220dp" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="220dp" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="220dp" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="220dp" />
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="564dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="220dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="304dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="146dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="288dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="164dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="272dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="178dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="256dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="196dp" />
+
+    <ImageView
+        android:layout_width="26dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginBottom="184dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/level3"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="302dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="88dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="228dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="108dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="250dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="128dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="266dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="164dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="302dp" />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="148dp"
+        android:src="@drawable/carta"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="284dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
