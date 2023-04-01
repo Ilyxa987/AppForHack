@@ -24,6 +24,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ui.games.HistoryOfCompany"/>
+        <activity android:name=".ui.games.Regulations"/>
+        <activity android:name=".ui.games.TeamBuilding"/>
     </application>
 
 </manifest>

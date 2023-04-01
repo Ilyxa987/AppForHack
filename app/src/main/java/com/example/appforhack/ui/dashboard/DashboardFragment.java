@@ -16,6 +16,8 @@ import com.example.appforhack.MainActivity;
 import com.example.appforhack.R;
 import com.example.appforhack.databinding.FragmentDashboardBinding;
 import com.example.appforhack.ui.games.HistoryOfCompany;
+import com.example.appforhack.ui.games.Regulations;
+import com.example.appforhack.ui.games.TeamBuilding;
 
 public class DashboardFragment extends Fragment implements View.OnClickListener {
 
@@ -55,8 +57,17 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
     public void onClick(View view) {
         switch (view.getId()){
             case R.id.level1:
-                Intent intent = new Intent(getActivity(), HistoryOfCompany.class);
-                startActivity(intent);
+                Intent intent1 = new Intent(getActivity(), HistoryOfCompany.class);
+                startActivity(intent1);
+                break;
+            case R.id.level2:
+                Intent intent2 = new Intent(getActivity(), Regulations.class);
+                startActivity(intent2);
+                break;
+            case R.id.level3:
+                Intent intent3 = new Intent(getActivity(), TeamBuilding.class);
+                startActivity(intent3);
+                break;
         }
     }
 }
