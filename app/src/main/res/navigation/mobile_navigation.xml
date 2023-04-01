@@ -22,4 +22,10 @@
         android:name="com.example.appforhack.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+
+    <fragment
+        android:id="@+id/navigation_table"
+        android:name="com.example.appforhack.ui.tourTable.TourTable"
+        android:label="Table"
+        tools:layout="@layout/fragment_table"/>
 </navigation>

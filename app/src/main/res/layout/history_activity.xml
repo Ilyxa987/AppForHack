@@ -1,29 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    android:background="#8659E9"
+    android:textAlignment="textEnd"
+    tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/queDia1"
-        android:layout_width="554dp"
-        android:layout_height="203dp"
-        android:src="@drawable/dialog"
+    <TextView
+
+        android:layout_width="365dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
+        android:text="В каком году"
+        android:textColor="@color/white"
+        android:textSize="37sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/quest1"
-        android:layout_width="235dp"
-        android:layout_height="116dp"
-        android:text="@string/question_one"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="@id/queDia1"
-        app:layout_constraintStart_toStartOf="@id/queDia1"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="20sp"/>
 
+        android:layout_width="365dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="25dp"
+        android:text="родилась компания?"
+        android:textColor="@color/white"
+        android:textSize="37sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.816"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button1"
+
+        android:layout_width="298dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="196dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#9C27B0"
+        android:text="hello word"
+        app:cornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/button2"
+        android:layout_width="298dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="#9C27B0"
+        android:text="Hi!"
+        app:cornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
+
+    <com.google.android.material.button.MaterialButton
+
+        android:id="@+id/button3"
+
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="40dp"
+        android:backgroundTint="#9C27B0"
+        android:text="yes"
+        app:cornerRadius="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
