@@ -28,6 +28,8 @@
         <activity android:name=".ui.games.HistoryOfCompany"/>
         <activity android:name=".ui.games.Regulations"/>
         <activity android:name=".ui.games.TeamBuilding"/>
+        <activity android:name=".ui.games.WhoCreator"/>
+        <activity android:name=".ui.games.TargetCreate"/>
     </application>
 
 </manifest>

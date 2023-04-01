@@ -36,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
         NavigationUI.setupWithNavController(binding.navView, navController);
 
+        if (getIntent().getExtras() != null) {
+            if ((int)getIntent().getExtras().get("Scores") != 0) {
+                Constants.scores = (int) getIntent().getExtras().get("Scores");
+            }
+        }
+
     }
 
 }

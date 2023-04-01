@@ -54,11 +54,13 @@ public class TeamBuilding extends AppCompatActivity {
                 NotificationCompat.Builder builder = new NotificationCompat.Builder(getApplicationContext(), CHANNEL_ID)
                         .setChannelId(CHANNEL_ID)
                         .setSmallIcon(R.drawable.score)
-                        .setContentTitle("sdfsdf")
-                        .setContentText("dsfdsf")
+                        .setContentTitle("Новое мероприятие")
+                        .setContentText(event)
                         .setPriority(NotificationCompat.PRIORITY_HIGH);
                 Notification notification = builder.build();
                 notificationManager.notify(NOTIFY_ID, notification);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
         });
     }

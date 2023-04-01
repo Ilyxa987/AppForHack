@@ -17,6 +17,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.appforhack.Achievement;
+import com.example.appforhack.Constants;
 import com.example.appforhack.R;
 import com.example.appforhack.databinding.FragmentHomeBinding;
 
@@ -47,6 +48,10 @@ public class HomeFragment extends Fragment  {
 
         scores = (TextView) root.findViewById(R.id.col_scores);
         //progress = (ProgressBar) root.findViewById(R.id.progress);
+
+        if (Constants.scores != 0) {
+            scores.setText(Integer.toString(Constants.scores));
+        }
 
         LinkedList<Achievement> achLinkedList = new LinkedList<>();
 

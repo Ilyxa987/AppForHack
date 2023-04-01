@@ -14,5 +14,7 @@ public class Regulations extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.regulations);
+
+
     }
 }
