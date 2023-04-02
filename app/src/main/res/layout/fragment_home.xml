@@ -60,21 +60,25 @@
 
         <ImageView
             android:id="@+id/score"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="80sp"
+            android:layout_height="80sp"
+            android:paddingTop="24sp"
+            android:paddingRight="10sp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:src="@drawable/score"/>
+            android:src="@drawable/logo"/>
 
         <TextView
+            android:paddingRight="10sp"
+            android:textStyle="bold"
             android:id="@+id/col_scores"
-            android:layout_width="90dp"
-            android:layout_height="90dp"
+            android:layout_width="90sp"
+            android:layout_height="90sp"
             app:layout_constraintTop_toTopOf="@id/score"
             app:layout_constraintLeft_toLeftOf="@id/score"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="30dp"
             android:textSize="20sp"
+            android:paddingTop="39sp"
+            android:paddingLeft="29sp"
             android:text="0"/>
 
         <ListView
