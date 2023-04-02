@@ -23,7 +23,7 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
 
     private FragmentDashboardBinding binding;
 
-    ImageButton quest1, quest2, quest3;
+    ImageButton quest1, quest2, quest3, quest4;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -41,6 +41,9 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
 
         quest3 = root.findViewById(R.id.level3);
         quest3.setOnClickListener(this);
+
+        quest4 = root.findViewById(R.id.level42);
+        quest4.setOnClickListener(this);
         return root;
     }
 
@@ -58,13 +61,16 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
                 startActivity(intent1);
                 break;
             case R.id.level2:
-                Intent intent2 = new Intent(getActivity(), Regulations.class);
+                Intent intent2 = new Intent(getActivity(), HistoryOfCompany.class);
                 startActivity(intent2);
                 break;
             case R.id.level3:
                 Intent intent3 = new Intent(getActivity(), TeamBuilding.class);
                 startActivity(intent3);
                 break;
+            case R.id.level42:
+                Intent intent4 = new Intent(getActivity(), HistoryOfCompany.class);
+                startActivity(intent4);
         }
     }
 }
