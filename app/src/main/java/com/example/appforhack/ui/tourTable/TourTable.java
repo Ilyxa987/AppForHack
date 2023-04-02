@@ -10,6 +10,7 @@ import android.widget.SimpleAdapter;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 
+import com.example.appforhack.Constants;
 import com.example.appforhack.Intern;
 import com.example.appforhack.R;
 import com.example.appforhack.databinding.FragmentTableBinding;
@@ -35,7 +36,7 @@ public class TourTable extends Fragment {
 
         internList.add(new Intern("Аргандейкина Софья", "67", R.drawable.ava_sofia));
         internList.add(new Intern("Волгарев Платон", "67", R.drawable.ava_platon));
-        internList.add(new Intern("Павлов Илья", "67", R.drawable.ava_ilya));
+        internList.add(new Intern("Павлов Илья", Integer.toString(Constants.scores), R.drawable.ava_ilya));
 
         String[] keyArray = {"name", "scores", "ava"};
         int [] idArray = {R.id.tour_name, R.id.tour_scores, R.id.ava};

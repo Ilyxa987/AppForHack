@@ -1,9 +1,13 @@
 package com.example.appforhack.ui.notifications;
 
+import android.graphics.drawable.AnimationDrawable;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -25,6 +29,7 @@ public class NotificationsFragment extends Fragment {
         NotificationsViewModel notificationsViewModel =
                 new ViewModelProvider(this).get(NotificationsViewModel.class);
 
+
         binding = FragmentNotificationsBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
@@ -32,7 +37,15 @@ public class NotificationsFragment extends Fragment {
 
         Constants constants = new Constants();
 
+        ImageView img = root.findViewById(R.id.anim);
+        img.setImageResource(R.drawable.animation);
+
+        AnimationDrawable anim = (AnimationDrawable) img.getDrawable();
+        anim.start();
+
         if (constants.event != null) {
+            anim.stop();
+            img.setVisibility(View.INVISIBLE);
             textView.setText(constants.event);
         }
 
