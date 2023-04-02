@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:background="#971546"
+    android:background="#A6651597"
     app:cornerRadius="35sp"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -17,17 +17,21 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        app:cornerRadius="35sp">
+        app:cornerRadius="15sp">
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tour_name"
-            app:cornerRadius="35sp"/>
+            style="@style/UserIconTextStyle"
+            android:textSize="20dp"
+            app:cornerRadius="15sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/tour_scores"
-            app:cornerRadius="35sp"/>
+            style="@style/UserIconTextStyle"
+            android:textSize="20dp"
+            app:cornerRadius="15sp"/>
 
     </LinearLayout>
 </LinearLayout>
