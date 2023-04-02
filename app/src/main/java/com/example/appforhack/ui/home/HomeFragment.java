@@ -55,14 +55,14 @@ public class HomeFragment extends Fragment  {
 
         LinkedList<Achievement> achLinkedList = new LinkedList<>();
 
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
-        achLinkedList.add(new Achievement("Ach 2", "Ghf", R.drawable.a2, 50));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
-        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.a1, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la1, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la2, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la3, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la4, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la5, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la6, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la7, 50));
+        achLinkedList.add(new Achievement("Achievement 1", "Asd", R.drawable.la8, 50));
        // ProgressBar bebra = (ProgressBar) root.findViewById(R.id.progress);
         String[] keyArray = {"title", "description", "cover", "percent", "progress"};
         int [] idArray = {R.id.title, R.id.desk, R.id.cover, R.id.percent};
