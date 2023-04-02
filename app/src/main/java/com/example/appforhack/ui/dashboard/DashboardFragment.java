@@ -33,8 +33,6 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
         binding = FragmentDashboardBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textDashboard;
-
         quest1 = root.findViewById(R.id.level1);
         quest1.setOnClickListener(this);
 
@@ -43,7 +41,6 @@ public class DashboardFragment extends Fragment implements View.OnClickListener 
 
         quest3 = root.findViewById(R.id.level3);
         quest3.setOnClickListener(this);
-        dashboardViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 
